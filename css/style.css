@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=WDXL+Lubrifont+JP+N&display=swap');
+
+*{font-family: "WDXL Lubrifont JP N", sans-serif;}
+.body{background-color: rgb(0, 0, 13);}
+.container{border: #ffaa00 solid 3px;}
+p{text-indent: 10px;}
+section{color: #ffaa00;}
+h5{margin-bottom: 0;}
+footer{color: rgb(128, 64, 0);}
+footer a{
+    text-decoration: underline;
+    font-style: italic;
+    color: rgb(128, 64, 0);
+}
+
+
+.text--bold{font-weight: 900;}
+
+.name-company{
+    color: white;
+    text-decoration: none;
+    font-family: "Gugi", sans-serif;
+}
+.logo{
+    max-width: 50px;
+    margin-right: 5px;
+}
+.header-logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    text-decoration: none;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFAA00;
+    color: white;
+    padding-bottom: 3px;
+    /* border-radius: 10px 10px 0 0; */
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    font-size: 20px;
+    transition-duration: 100ms;
+}
+.header-home-screen{
+    background: linear-gradient(-90deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%),url('../assets/img/stuff-AEC.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height:683px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+.on-name-text{
+    color: #ffaa00;
+}
+h1{
+    color: #ffaa00;
+    font-family: "Gugi", sans-serif;
+    text-decoration: underline solid #ffaa00;
+    margin-bottom: 0;
+}
+.slogan{
+    color: #ffaa00;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-indent: 9%;
+    animation: moveright 2s;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+
+.section-about__field-activity{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    background: linear-gradient(rgb(0,0,13) 70%, rgb(91, 45, 0) 100%);
+    border: #ffaa00 solid 3px;
+    color: #ffaa00;
+    border-radius: 10px;
+}
+.section-about__field-activity--main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-about__list-items{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.section-about__list-item{
+    border: #ffaa00 solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.section-about__row-items{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+}
+.section-about__row-item{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: #ffaa00 solid 3px;
+    font-weight: 900;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+}
+
+
+.footer__socials a img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+.section-reviews__review{
+    margin: 8px 0;
+}
+
+.section-reviews__review-top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section-reviews__review img{
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.section-reviews__review-heading{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.section-reviews__review-heading-top{
+    display: flex;
+    align-items: center;
+}
+
+.section-reviews__review-heading-date{
+    color: rgb(128, 64, 0);
+    margin-left: 10px;
+}
+
+.section-reviews__review-heading-status{
+    color: rgb(128, 64, 0);
+}
+.section-reviews__review p{
+    padding-left: 50px;
+    margin-bottom: 0;
+}
+.section-reviews__review-under-text{
+    padding-left: 50px;
+    color: rgb(128, 64, 0);
+    font-size: 15px;
+}
+
+.section-gallary__gallary img{
+    width: 400px;
+    border-radius: 10px;
+    border: #ffaa00 solid 3px;
+}
+.section-gallary__gallary img:hover{
+    border: #ffaa00 dashed 3px;
+}
+.section-gallary__gallary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.section-about__list-item_first{
+    animation-name: moveup;
+    animation-duration: 2s;
+}
+.section-about__list-item_second{
+    animation-name: moveup;
+    animation-duration: 4s;
+}
+.section-about__list-item_third{
+    animation-name: moveup;
+    animation-duration: 6s;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        flex-wrap: wrap;
+    }
+    .header-logo{
+        padding-bottom: 10px;
+    }
+    .header-nav{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-about__row-items{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+    .section-about__row-item{
+        width: 45%;
+    }
+    .section-about__field-activity{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .section-about__list-item{
+        margin-right: 0;
+    }
+    .section-about__list-items{
+        margin-right: 10px;
+    }
+}
+
+@keyframes moveright{
+    from{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes moveup{
+    from{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.accordion{
+  --bs-accordion-bg: rgb(0,0,13);
+  --bs-accordion-color: #ffaa00;
+  --bs-accordion-btn-bg: rgb(0,0,13);
+  --bs-accordion-btn-color: #ffaa00;
+  --bs-accordion-active-bg: #ffaa00;
+  --bs-accordion-active-color: #ffffff;
+  --bs-accordion-border-color: #ffaa00;
+}
+.accordion .accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffaa00'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
